@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/id_bottom_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C3C7E6"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/id_edit_text"
+            android:layout_marginRight="6dp"
+            android:layout_width="0dp"
+            android:textColor="#ED1404"
+            android:hint="Enter the Notes here..."
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AddNotes"
+            android:onClick="addItemToList"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_above="@id/id_bottom_section"
+        android:layout_width="match_parent"
+        android:background="#505759"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0C2860"
+            android:id="@+id/id_list_view" >
+
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Layout Manager</string>
+    <string name="login_form">Login Form</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="new_user_sign_up">New User ? Sign Up</string>
+</resources>

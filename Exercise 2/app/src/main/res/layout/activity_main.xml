@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_form"
+        android:textSize="36dp"
+        android:textColor="@color/btnColor"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name"
+                android:textColor="@color/txtColor"
+                android:textSize="30dp"
+                android:id="@+id/lbl1"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true">
+            </TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt1"
+                android:layout_below="@+id/lbl1"
+                android:textSize="26dp"
+                android:textColor="@color/txtColor">
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@color/txtColor"
+                android:textSize="30dp"
+                android:id="@+id/lbl2"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt1"
+                android:layout_marginTop="30dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt2"
+                android:inputType="textPassword"
+                android:layout_below="@+id/lbl2"
+                android:textSize="26dp"
+                android:textColor="@color/txtColor">
+            </EditText>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:layout_below="@+id/txt2"
+                android:background="@color/purple_700"
+                android:textSize="26dp"
+                android:textColor="@color/txtColor"
+                android:layout_marginTop="40dp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:cursorVisible="true">
+            </Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_user_sign_up"
+            android:textColor="@color/txtColor"
+            android:textSize="20dp"
+            android:id="@+id/signup"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>
